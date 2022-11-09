@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /swaggerTest
+
+config:
+  swaggerConfig:
+    #是否展示swagger,true表示展示。生产环境中需要置为false,避免暴露接口
+    isShow: true
