@@ -96,4 +96,22 @@ http://127.0.0.1:8080/swaggerTest/doc.html#/%E7%A7%98%E9%92%A5%E7%AE%A1%E7%90%86
 
 
 <br>
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/101_build_example.png">
+</p>
 
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/102_start_example.png">
+</p>
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/201_makekey.png">
+</p>
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/202_dataEncrypt.png">
+</p>
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/203_dataDecrypt.png">
+</p>

@@ -21,8 +21,6 @@ public class MakeKey<keys> {
         SaveKeyToMysql saveKeyToMysql = new SaveKeyToMysql();
         Map<Object, Object> b = saveKeyToMysql.saveKeys(randomStringKeyId,randomStringKey);
 
-        System.out.println("===========" + b);
-
         Map c = null;
         for (Object key : b.keySet()) {
              //System.out.println("key= " + key + " and value= " + b.get(key));
