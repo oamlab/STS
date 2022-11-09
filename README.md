@@ -57,11 +57,11 @@ def decrypt(keyId,密文):
 - **7、** 其他。
 
 ## 其他
-- **1、** 工程内的数据库密码等，是随手写的。
+- **1、** 工程内的数据库密码等，是随手写的，可以依需要进行修改。
 
 ``` java
 自测地址：
-http://127.0.0.1:8080/swaggerTest/doc.html#/%E7%A7%98%E9%92%A5%E7%AE%A1%E7%90%86API/%E7%A7%98%E9%92%A5%E7%AE%A1%E7%90%86API/makeKeyUsingPOST
+http://127.0.0.1:8080/swaggerTest/doc.html
 
 制造秘钥：
 {
