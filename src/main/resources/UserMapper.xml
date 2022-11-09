@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:名称空间
+    id:sql语句的唯一标识
+    resultType:返回值类型
+-->
+<mapper namespace="test">
+    <select id="selectAll" resultType="com.oamlab.swaggerbootstrapui.infrastructure.persistent.po.Key">
+        select id,keyid,cryptkey from t_key where id = 1000000001;
+    </select>
+
+    <select id="selectByKeyId" resultType="java.util.Map">
+        select id,keyid,cryptkey from t_key where keyid = #{keyid};
+    </select>
+
+    <insert id="insert1">
+        insert into t_key(id,keyid,cryptkey)
+        values(#{id},#{keyId},#{cryptKey})
+    </insert>
+</mapper>
