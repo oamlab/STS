@@ -13,7 +13,7 @@
     </select>
 
     <select id="selectByKeyId" resultType="java.util.Map">
-        select id,keyid,cryptkey from t_key where keyid = #{keyid};
+        select id,keyid,cryptkey from t_key where keyid = #{keyid} limit 1;
     </select>
 
     <insert id="insert1">
