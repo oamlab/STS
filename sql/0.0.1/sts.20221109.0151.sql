@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `t_key` (
   `keyid` varchar(64) DEFAULT NULL,
   `cryptkey` varchar(16) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='key';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='key';
 
 -- 数据导出被取消选择。
 
