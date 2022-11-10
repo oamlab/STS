@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /swaggerTest
+    context-path: /OAMLab
 
 config:
   swaggerConfig:
