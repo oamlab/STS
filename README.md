@@ -7,7 +7,7 @@
 
 ## 前言：
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
-- [Online Documentation：https://github.com/oamlab/STS/README_English.md](https://github.com/oamlab/STS/README_English.md)
+- [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README_English.md)
 
 ## 背景：
 - 解决业务环境配置项的涉密密码的加密需求。譬如：某系统平台的管理的配置项有秘钥明码的问题，在日常管理过程中，可能造成人为的秘钥外泄。
