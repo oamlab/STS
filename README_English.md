@@ -5,7 +5,7 @@
 
 ---
 
-## 前言：
+## Preface：
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
 - [Online Documentation：https://github.com/oamlab/STS/README_English.md](https://github.com/oamlab/STS/README_English.md)
 
