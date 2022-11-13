@@ -75,7 +75,7 @@ def decrypt(keyId,ciphertext):
 - **7.** others.
 
 ## other
-- **1, ** The database password, etc. in the project are handwritten and can be modified as needed.
+- **1.** The database password, etc. in the project are handwritten and can be modified as needed.
 
 ``` java
 Test address:
