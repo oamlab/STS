@@ -9,45 +9,45 @@
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
 - [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README_English.md)
 
-## 背景：
-- 解决业务环境配置项的涉密密码的加密需求。譬如：某系统平台的管理的配置项有秘钥明码的问题，在日常管理过程中，可能造成人为的秘钥外泄。
-- 某项目的基础设施平台部署后，需要进行从接口到DB的压力测试。
+## Background:
+- Solve the encryption requirements of confidential passwords of business environment configuration items. For example, the management configuration items of a certain system platform have the problem of clear keys, which may result in the leakage of artificial keys in the daily management process.
+- After the infrastructure platform of a project is deployed, a stress test needs to be performed from the interface to the DB.
 
-## 用途
-- **场景A：** 可用于业务环境涉密配置项加密，如下：
-- 1、某项目的生产环境数据库管理员新建了数据库账号A，密码P
-- 2、生产环境数据库管理员使用STS接口获取keyid，结合密码P，在STS接口获得密码P的密文XXX
-- 3、生产环境数据库管理员将密文XXX和keyid发放给项目组成员放入业务程序的配置项，或放入平台的ConfigMaps。
-- 4、业务程序启动后将密文XXX和keyid发送到STS接口获得明文密码P
-- 5、业务程序使用账号A和密码P连接数据库。
-- 注意：
-- 1、要求该STS只有生产环境数据库管理员和业务程序主机IP可访问，其他人和设备无法访问该STS接口；
-- 2、也可以把账号也加密了。
-- 3、理论上密文XXX和keyid对外泄露不会产生泄密影响，因为脱离该STS则该密文无法解密。
-- 4、测试环境可以独立部署一套STS，与生产环境区别开来。
+## Purpose
+- **Scenario A:** It can be used to encrypt confidential configuration items in business environment, as follows:
+- 1.The database administrator of a project's production environment creates a new database account A, password P
+- 2.The database administrator in the production environment uses the STS interface to obtain the keyid, combined with the password P, and obtains the ciphertext XXX of the password P on the STS interface
+- 3.The database administrator in the production environment distributes the ciphertext XXX and keyid to the project team members into the configuration items of the business program, or into the ConfigMaps of the platform.
+- 4.fter the business program starts, send the ciphertext XXX and keyid to the STS interface to obtain the plaintext password P
+- 5.The business program uses account A and password P to connect to the database.
+- Notice:
+- 1.It is required that only the production environment database administrator and business program host IP can access the STS, and other people and devices cannot access the STS interface;
+- 2.You can also encrypt your account.
+- 3.Theoretically, the leakage of the ciphertext XXX and keyid will not cause leakage, because the ciphertext cannot be decrypted without the STS.
+- 4.The test environment can independently deploy a set of STS, which is different from the production environment.
 - 
 - 
-- **场景B：** 可用于基础设施环境交付前的接口测试、压力测试，如下：
-- 1、某项目新部署了一套kubernetes平台。
-- 2、测试人员将STS部署到kubernetes内，并启动100个Pod，这些Pod连接同一数据库。
-- 3、测试人员以1万QPS的速度进行了10分钟制造秘钥的接口请求，理论上将会产生600万条数据。
-- 4、测试人员将实际获得的数据条数除以600万，获得了接口可用率数据、性能数据。
-- 5、在此过程中测试人员也观察到了宿主机和平台的CPU、内存、网络、磁盘等相关负载能力数据和图表。
-- 6、测试人员总结生成综合报告，向业务部门反馈该kubernetes平台的负载能力。
+- **Scenario B:** It can be used for interface testing and stress testing before the delivery of the infrastructure environment, as follows:
+- 1.A project has newly deployed a kubernetes platform.
+- 2.The tester deploys STS into kubernetes and starts 100 Pods, which connect to the same database.
+- 3.The tester made a 10-minute interface request to create a secret key at a speed of 10,000 QPS, which will theoretically generate 6 million pieces of data.
+- 4.The tester divides the actual number of data bars by 6 million to obtain the interface availability data and performance data.
+- 5.During this process, the testers also observed the relevant load capacity data and charts of the host and platform such as CPU, memory, network, disk, etc.
+- 6.The tester summarizes and generates a comprehensive report, and feeds back the load capacity of the kubernetes platform to the business department.
 
-## 基本概况
-- 开发语言：JAVA
-- 秘钥算法：SM4加密，对称加密
-- 接口类型：RESTful
-- 使用范围：业务项目范围内、微服务集群内
-- 访问控制：iptables限制客户端IP范围，nginx限制客户端IP范围
-- 高可用：数据库主从（主宕机不能新增，但不影响查询）、接口双活+VIP
+## Basic profile
+- Development language: JAVA
+- Key algorithm: SM4 encryption, symmetric encryption
+- Interface type: RESTful
+- Scope of use: within the scope of business projects, within the microservice cluster
+- Access control: iptables restricts client IP range, nginx restricts client IP range
+- High availability: database master-slave (master downtime cannot add keys, but does not affect query), interface HA+VIP
 
-## 概要功能伪代码
+## Summary function pseudo code
 
 ``` java
 def makeKey():
-    key = random(对称秘钥X位)
+    key = random(Symmetric key X bits)
     sqlquery(conn,insert,key)
     keyId = sqlquery(conn,select,key)
     return keyId,key
@@ -56,32 +56,32 @@ def getKey(keyId):
     key = sqlquery(conn,select,keyId)
     return key
 
-def encrypt(keyId,明文):
-    密文 = 算法(encrypt,明码字符,key=getKey(keyId))
-    return 密文
+def encrypt(keyId,plaintext):
+    ciphertext = algorithm(encrypt,plaintext,key=getKey(keyId))
+    return ciphertext
 
-def decrypt(keyId,密文):
-    明文 = 算法(decrypt,密文,key=getKey(keyId))
-    return 明文
+def decrypt(keyId,ciphertext):
+    plaintext = algorithm(decrypt,ciphertext,key=getKey(keyId))
+    return plaintext
 ```
-## 待改善
+## To be improved
 
-- **1、** 当前只是实现设想中的功能，代码结构需要进一步设计，也可以嵌入到更完善的框架内。
-- **2、** 建议部署于集群内，因为接口无鉴权，当前看起来也不需要鉴权。
-- **3、** 待添加URL过滤等。
-- **4、** 明文要进行base64编码。
-- **5、** 待进行进一步安全设计。
-- **6、** 异常捕捉、日志（可以不记录业务日志）。
-- **7、** 其他。
+- **1.** At present, it is only to implement the envisaged functions, and the code structure needs to be further designed, and it can also be embedded in a more complete framework.
+- **2.** It is recommended to deploy in the cluster, because the interface is not authenticated, and it does not seem to require authentication at present.
+- **3.** URL filtering, etc. to be added.
+- **4.** The plaintext should be base64 encoded.
+- **5.** To be further safety design.
+- **6.** Exception capture, log (business log may not be recorded).
+- **7.** others.
 
-## 其他
-- **1、** 工程内的数据库密码等，是随手写的，可以依需要进行修改。
+## other
+- **1, ** The database password, etc. in the project are handwritten and can be modified as needed.
 
 ``` java
-自测地址：
+Test address:
 http://127.0.0.1:8080/OAMLab/doc.html
 
-制造秘钥：
+MakeKey：
 {
 	"cipherText": "",
 	"id": 0,
@@ -90,7 +90,7 @@ http://127.0.0.1:8080/OAMLab/doc.html
 	"plainText": ""
 }
 
-加密：
+Encrypt：
 {
 	"cipherText": "",
 	"id": 0,
@@ -99,7 +99,7 @@ http://127.0.0.1:8080/OAMLab/doc.html
 	"plainText": "OAMLab"
 }
 
-解密：
+Decrypt：
 {
 	"cipherText": "4808bd3336f933121118ba0798dc0a61",
 	"id": 0,
@@ -109,8 +109,8 @@ http://127.0.0.1:8080/OAMLab/doc.html
 }
 ``` 
 
-## 技术交流群
-深圳运维圈 QQ交流群：216589280 [点击加入](https://jq.qq.com/?_wv=1027&k=tdDtDoUp)
+## Technical exchange club
+(CN)SHENZHEN Operation And Maintenance CLUB, QQ group：216589280 [Click to join](https://jq.qq.com/?_wv=1027&k=tdDtDoUp)
 
 
 <br>
