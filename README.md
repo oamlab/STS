@@ -133,3 +133,22 @@ http://127.0.0.1:8080/OAMLab/doc.html
 <p align="center">
 	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/203_dataDecrypt.png">
 </p>
+
+## 压力测试
+- 云平台：Kubernetes
+- 容器数(STS)：2
+- 并发：200
+- 总请求次数：20000
+- [JMeter-Testing-profile](https://github.com/oamlab/STS/blob/main/Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
+</p>
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/202_Report.png">
+</p>
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
+</p>
