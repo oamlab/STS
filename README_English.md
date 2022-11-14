@@ -133,3 +133,22 @@ Decrypt：
 <p align="center">
 	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/203_dataDecrypt.png">
 </p>
+
+## Performance_Testing
+- Cloud platform:Kubernetes
+- Number of containers(STS)：2
+- Concurrency:200
+- Total requests：20000
+- [JMeter-Testing-profile](https://github.com/oamlab/STS/blob/main/Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
+</p>
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/202_Report.png">
+</p>
+
+<p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
+</p>
