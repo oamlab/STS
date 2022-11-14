@@ -112,16 +112,18 @@ http://127.0.0.1:8080/OAMLab/doc.html
 ## 技术交流群
 深圳运维圈 QQ交流群：216589280 [点击加入](https://jq.qq.com/?_wv=1027&k=tdDtDoUp)
 
-
+## 编译
 <br>
 <p align="center">
 	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/101_build_example.png">
 </p>
 
+## 启动
 <p align="center">
 	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/102_start_example.png">
 </p>
 
+## 使用
 <p align="center">
 	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/201_makekey.png">
 </p>
