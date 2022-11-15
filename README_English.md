@@ -144,6 +144,10 @@ Decrypt：
 - [JMeter-Testing-profile](https://github.com/oamlab/STS/blob/main/Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
 
 <p align="center">
+	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/151_kubernetes_STS.png">
+</p>
+
+<p align="center">
 	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
 </p>
 
