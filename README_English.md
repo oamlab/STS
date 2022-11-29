@@ -82,7 +82,7 @@ def decrypt(keyId,ciphertext):
 Test address:
 http://127.0.0.1:8080/OAMLab/doc.html
 
-MakeKey：
+MakeKey：http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
 {
 	"cipherText": "",
 	"id": 0,
@@ -91,7 +91,7 @@ MakeKey：
 	"plainText": ""
 }
 
-Encrypt：
+Encrypt：http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
 {
 	"cipherText": "",
 	"id": 0,
@@ -100,7 +100,7 @@ Encrypt：
 	"plainText": "OAMLab"
 }
 
-Decrypt：
+Decrypt：http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
 {
 	"cipherText": "4808bd3336f933121118ba0798dc0a61",
 	"id": 0,
