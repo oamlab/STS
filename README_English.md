@@ -37,6 +37,7 @@
 
 ## Basic profile
 - Development language: JAVA
+- Java_Version：1.8.0
 - Key algorithm: SM4 encryption, symmetric encryption
 - Interface type: RESTful
 - Scope of use: within the scope of business projects, within the microservice cluster
