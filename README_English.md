@@ -18,7 +18,7 @@
 - 1.The database administrator of a project's production environment creates a new database account A, password P
 - 2.The database administrator in the production environment uses the STS interface to obtain the keyid, combined with the password P, and obtains the ciphertext XXX of the password P on the STS interface
 - 3.The database administrator in the production environment distributes the ciphertext XXX and keyid to the project team members into the configuration items of the business program, or into the ConfigMaps of the platform.
-- 4.fter the business program starts, send the ciphertext XXX and keyid to the STS interface to obtain the plaintext password P
+- 4.After the business program starts, send the ciphertext XXX and keyid to the STS interface to obtain the plaintext password P
 - 5.The business program uses account A and password P to connect to the database.
 - Notice:
 - 1.It is required that only the production environment database administrator and business program host IP can access the STS, and other people and devices cannot access the STS interface;
