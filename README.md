@@ -109,6 +109,11 @@ http://127.0.0.1:8080/OAMLab/doc.html
 	"keyId": "6GsjGc6febXsRPqyRMKAATe2olVdjqBJuja5vbr6lCmpaia54qdvNhr2KZNYITu3",
 	"plainText": ""
 }
+
+API健康检查：http://127.0.0.1:8080/OAMLab/api/v1/healthy
+{
+	"healthy": "1",
+}
 ``` 
 
 ## 技术交流群

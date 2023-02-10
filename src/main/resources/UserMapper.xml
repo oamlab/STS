@@ -20,4 +20,8 @@
         insert into t_key(id,keyid,cryptkey)
         values(#{id},#{keyId},#{cryptKey})
     </insert>
+
+    <select id="selectUnixTimeStamp" resultType="java.util.Map">
+        SELECT UNIX_TIMESTAMP() AS MysqlTimeStamp;
+    </select>
 </mapper>
