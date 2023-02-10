@@ -50,6 +50,26 @@ public class SwaggerConfig {
 //    }
 
     @Bean
+    public Docket getHealthyRestApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .enable(isShow)
+                // 用来创建该API的基本信息，展示在文档的页面中（自定义展示的信息）
+                .apiInfo(apiInfo())
+                .groupName("API状态")
+                // 通过select()函数返回一个ApiSelectorBuilder实例,用来控制哪些接口暴露给Swagger来展现
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.oamlab.swaggerbootstrapui.controller.key"))
+                // 扫描所有有注解的api
+                //.apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+                // 扫描指定包中的swagger注解
+                //.apis(RequestHandlerSelectors.basePackage("com.kxjl.belleps.api"))
+                // 扫描所有 .apis(RequestHandlerSelectors.any())
+                // 对所有路径进行监控
+                .paths(PathSelectors.any())
+                .build();
+    }
+
+    @Bean
     public Docket createRoleRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .enable(isShow)

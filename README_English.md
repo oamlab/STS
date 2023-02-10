@@ -83,7 +83,7 @@ def decrypt(keyId,ciphertext):
 Test address:
 http://127.0.0.1:8080/OAMLab/doc.html
 
-MakeKey：http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
+MakeKey: http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
 {
 	"cipherText": "",
 	"id": 0,
@@ -92,7 +92,7 @@ MakeKey：http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
 	"plainText": ""
 }
 
-Encrypt：http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
+Encrypt: http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
 {
 	"cipherText": "",
 	"id": 0,
@@ -101,13 +101,18 @@ Encrypt：http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
 	"plainText": "OAMLab"
 }
 
-Decrypt：http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
+Decrypt: http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
 {
 	"cipherText": "4808bd3336f933121118ba0798dc0a61",
 	"id": 0,
 	"key": "",
 	"keyId": "6GsjGc6febXsRPqyRMKAATe2olVdjqBJuja5vbr6lCmpaia54qdvNhr2KZNYITu3",
 	"plainText": ""
+}
+
+API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/getHealthy
+{
+	"healthy": "1",
 }
 ``` 
 
