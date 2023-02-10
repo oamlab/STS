@@ -110,7 +110,7 @@ Decrypt: http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
 	"plainText": ""
 }
 
-API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/getHealthy
+API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 {
 	"healthy": "1",
 }
