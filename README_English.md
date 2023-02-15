@@ -64,6 +64,10 @@ def encrypt(keyId,plaintext):
 def decrypt(keyId,ciphertext):
     plaintext = algorithm(decrypt,ciphertext,key=getKey(keyId))
     return plaintext
+    
+def healthy():
+    healthyStatus = Math.abs(mysqlTimeStamp - javaTimeStamp)
+    return healthyStatus
 ```
 ## To be improved
 
