@@ -64,6 +64,10 @@ def encrypt(keyId,明文):
 def decrypt(keyId,密文):
     明文 = 算法(decrypt,密文,key=getKey(keyId))
     return 明文
+    
+def healthy():
+    healthyStatus = Math.abs(mysqlTimeStamp - javaTimeStamp)
+    return healthyStatus
 ```
 ## 待改善
 
