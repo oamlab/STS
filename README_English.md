@@ -1,5 +1,5 @@
 
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">STS v0.0.1</h1>
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">STS v0.1.0</h1>
 <h4 align="center">Secret Transfer Service</h4>
 <p align="center"></p>
 
@@ -64,7 +64,7 @@ def encrypt(keyId,plaintext):
 def decrypt(keyId,ciphertext):
     plaintext = algorithm(decrypt,ciphertext,key=getKey(keyId))
     return plaintext
-    
+
 def healthy():
     healthyStatus = Math.abs(mysqlTimeStamp - javaTimeStamp)
     return healthyStatus
