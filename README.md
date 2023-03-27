@@ -169,5 +169,3 @@ API健康检查：http://127.0.0.1:8080/OAMLab/api/v1/healthy
 <p align="center">
 	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
 </p>
-
-*图片是存在的，如果您看不到图片，请检查网络设置或咨询网络技术工程师。

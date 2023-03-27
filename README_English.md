@@ -169,5 +169,3 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 <p align="center">
 	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
 </p>
-
-*The image exists. If you cannot see it, please check your network settings or consult a network technical engineer.
