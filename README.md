@@ -84,10 +84,10 @@ def healthy():
 
 ## 自测
 ``` java
-自测地址：
+自测地址:
 http://127.0.0.1:8080/OAMLab/doc.html
 
-制造秘钥：http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
+制造秘钥: http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
 {
 	"cipherText": "",
 	"id": 0,
@@ -96,7 +96,7 @@ http://127.0.0.1:8080/OAMLab/doc.html
 	"plainText": ""
 }
 
-加密：http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
+加密: http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
 {
 	"cipherText": "",
 	"id": 0,
@@ -105,7 +105,7 @@ http://127.0.0.1:8080/OAMLab/doc.html
 	"plainText": "OAMLab"
 }
 
-解密：http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
+解密: http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
 {
 	"cipherText": "4808bd3336f933121118ba0798dc0a61",
 	"id": 0,
@@ -114,7 +114,7 @@ http://127.0.0.1:8080/OAMLab/doc.html
 	"plainText": ""
 }
 
-API健康检查：http://127.0.0.1:8080/OAMLab/api/v1/healthy
+API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 {
 	"healthy": "1",
 }
