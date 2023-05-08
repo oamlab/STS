@@ -7,7 +7,7 @@
 
 ## 前言：
 - [在线文档：https://gitee.com/oamlab/STS](https://gitee.com/oamlab/STS)
-- [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README_English.md)
+- [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README.English.md)
 
 *[国际访问请使用国际资料站github入口，点击进入](https://github.com/oamlab/STS)
 
