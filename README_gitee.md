@@ -6,10 +6,10 @@
 ---
 
 ## 前言：
-- [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
+- [在线文档：https://gitee.com/OAMLab/STS](https://gitee.com/OAMLab/STS/blob/main/README_gitee.md)
 - [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README_English.md)
 
-*[国内访问请使用国内资料站gitee入口，点击进入](https://gitee.com/OAMLab/STS/blob/main/README_gitee.md)
+*[国际访问请使用国际资料站github入口，点击进入](https://github.com/oamlab/STS)
 
 ## 背景：
 - 解决业务环境配置项的涉密密码的加密需求。譬如：某系统平台的管理的配置项有秘钥明码的问题，在日常管理过程中，可能造成人为的秘钥外泄。
@@ -125,30 +125,30 @@ API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 ## 技术交流群
 深圳运维圈 QQ交流群：216589280 [点击加入](https://jq.qq.com/?_wv=1027&k=tdDtDoUp)
 
-*[国内访问请使用国内资料站gitee入口，点击进入](https://gitee.com/OAMLab/STS/blob/main/README_gitee.md)
+*[国际访问请使用国际资料站github入口，点击进入](https://github.com/oamlab/STS)
 
 ## 编译
 <br>
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/101_build_example.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/101_build_example.png">
 </p>
 
 ## 启动
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/102_start_example.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/102_start_example.png">
 </p>
 
 ## 调试与使用
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/201_makekey.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/201_makekey.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/202_dataEncrypt.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/202_dataEncrypt.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/203_dataDecrypt.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/203_dataDecrypt.png">
 </p>
 
 ## 压力测试
@@ -156,20 +156,20 @@ API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 - 容器数(STS)：2
 - 并发：200
 - 总请求次数：20000
-- [JMeter-Testing-profile](https://github.com/oamlab/STS/blob/main/Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
+- [JMeter-Testing-profile](https://gitee.com/OAMLab/STS/raw/main/Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/151_Kubernetes_STS.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/Performance_Testing/151_Kubernetes_STS.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/Performance_Testing/201_Thread_Group.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/202_Report.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/Performance_Testing/202_Report.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
+	<img alt="logo" src="https://gitee.com/OAMLab/STS/raw/main/Performance_Testing/203_data.png">
 </p>
