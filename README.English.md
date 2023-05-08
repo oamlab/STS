@@ -7,7 +7,7 @@
 
 ## Preface：
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
-- [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README_English.md)
+- [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README.English.md)
 
 ## Background:
 - Solve the encryption requirements of confidential passwords of business environment configuration items. For example, the management configuration items of a certain system platform have the problem of clear keys, which may result in the leakage of artificial keys in the daily management process.
