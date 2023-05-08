@@ -25,8 +25,8 @@
 - 2.You can also encrypt your account.
 - 3.Theoretically, the leakage of the ciphertext XXX and keyid will not cause leakage, because the ciphertext cannot be decrypted without the STS.
 - 4.The test environment can independently deploy a set of STS, which is different from the production environment.
-
-
+-
+-
 - **Scenario B:** It can be used for interface testing and stress testing before the delivery of the infrastructure environment, as follows:
 - 1.A project has newly deployed a kubernetes platform.
 - 2.The tester deploys STS into kubernetes and starts 100 Pods, which connect to the same database.
