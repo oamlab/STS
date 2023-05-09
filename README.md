@@ -1,6 +1,17 @@
 
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">STS v0.1.0</h1>
 <h4 align="center">Secret Transfer Service</h4>
+<p align="center">
+  <a href="./LICENSE"><img alt="license" src="https://img.shields.io/github/license/oamlab/STS" /></a>
+  <img alt="repo-size" src="https://img.shields.io/github/repo-size/oamlab/STS" />
+</p>
+
+<p align="center">
+   <a href="https://github.com/oamlab/STS">github</a> | 
+   <a href="https://gitee.com/oamlab/STS">gitee</a> | 
+   <a href="https://github.com/oamlab/STS/blob/main/README.English.md">English</a>
+</p>
+
 <p align="center"></p>
 
 ---
@@ -75,7 +86,7 @@ def healthy():
 
 - **1、** 当前只是实现设想中的功能，代码结构需要进一步设计，也可以嵌入到更完善的框架内。
 - **2、** 建议部署于集群内，因为接口无鉴权，当前看起来也不需要鉴权。
-- **3、** 待添加URL过滤等。
+- **3、** 待添加URL过滤、字符过滤等。
 - **4、** 明文要进行base64编码。
 - **5、** 待进行进一步安全设计。
 - **6、** 异常捕捉、日志（可以不记录业务日志）。
@@ -130,25 +141,25 @@ API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 ## 编译
 <br>
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/101_build_example.png">
+	<img alt="OAMLab_sts_build_example" src="https://github.com/oamlab/STS/blob/main/101_build_example.png">
 </p>
 
 ## 启动
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/102_start_example.png">
+	<img alt="OAMLab_sts_start_example" src="https://github.com/oamlab/STS/blob/main/102_start_example.png">
 </p>
 
-## 调试与使用
+## 调试与试用
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/201_makekey.png">
-</p>
-
-<p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/202_dataEncrypt.png">
+	<img alt="OAMLab_sts_MakeKey" src="https://github.com/oamlab/STS/blob/main/201_makekey.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/203_dataDecrypt.png">
+	<img alt="OAMLab_sts_dataEncrypt" src="https://github.com/oamlab/STS/blob/main/202_dataEncrypt.png">
+</p>
+
+<p align="center">
+	<img alt="OAMLab_sts_dataDecrypt" src="https://github.com/oamlab/STS/blob/main/203_dataDecrypt.png">
 </p>
 
 ## 压力测试
@@ -159,17 +170,17 @@ API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 - [JMeter-Testing-profile](https://github.com/oamlab/STS/blob/main/Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/151_Kubernetes_STS.png">
+	<img alt="OAMLab_sts_Kubernetes_STS" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/151_Kubernetes_STS.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Thread_Group" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/202_Report.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Report" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/202_Report.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Mysql_Data" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
 </p>
