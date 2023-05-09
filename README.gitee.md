@@ -1,6 +1,10 @@
 
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">STS v0.1.0</h1>
 <h4 align="center">Secret Transfer Service</h4>
+<p align="center">
+  <a href="./LICENSE"><img alt="license" src="https://img.shields.io/github/license/oamlab/STS" /></a>
+  <img alt="repo-size" src="https://img.shields.io/github/repo-size/oamlab/STS" />
+</p>
 
 <p align="center">
    <a href="https://github.com/oamlab/STS">github</a> | 
