@@ -137,25 +137,25 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 ## Compile
 <br>
 <p align="center">
-	<img alt="OAMLab_sts_build_example" src="https://github.com/oamlab/STS/blob/main/101_build_example.png">
+	<img alt="OAMLab_sts_build_example" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/101_build_example.png">
 </p>
 
 ## Start STS
 <p align="center">
-	<img alt="OAMLab_sts_start_example" src="https://github.com/oamlab/STS/blob/main/102_start_example.png">
+	<img alt="OAMLab_sts_start_example" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/102_start_example.png">
 </p>
 
 ## Debug and Trial
 <p align="center">
-	<img alt="OAMLab_sts_MakeKey" src="https://github.com/oamlab/STS/blob/main/201_makekey.png">
+	<img alt="OAMLab_sts_MakeKey" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/201_makekey.png">
 </p>
 
 <p align="center">
-	<img alt="OAMLab_sts_dataEncrypt" src="https://github.com/oamlab/STS/blob/main/202_dataEncrypt.png">
+	<img alt="OAMLab_sts_dataEncrypt" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/202_dataEncrypt.png">
 </p>
 
 <p align="center">
-	<img alt="OAMLab_sts_dataDecrypt" src="https://github.com/oamlab/STS/blob/main/203_dataDecrypt.png">
+	<img alt="OAMLab_sts_dataDecrypt" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/203_dataDecrypt.png">
 </p>
 
 ## Performance_Testing
