@@ -16,17 +16,17 @@
 
 ---
 
-## 前言：
+## 🌏 前言：
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
 - [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README.English.md)
 
 *[国内访问请使用国内资料站gitee入口，点击进入](https://gitee.com/oamlab/STS)
 
-## 背景：
+## 🔒 背景：
 - 解决业务环境配置项的涉密密码的加密需求。譬如：某系统平台的管理的配置项有秘钥明码的问题，在日常管理过程中，可能造成人为的秘钥外泄。
 - 某项目的基础设施平台部署后，需要进行从接口到DB的压力测试。
 
-## 用途
+## 🔑 用途
 - **场景A：** 可用于业务环境涉密配置项加密，如下：
 - 1、某项目的生产环境数据库管理员新建了数据库账号A，密码P
 - 2、生产环境数据库管理员使用STS接口获取keyid，结合密码P，在STS接口获得密码P的密文XXX
@@ -48,7 +48,7 @@
 - 5、在此过程中测试人员也观察到了宿主机和平台的CPU、内存、网络、磁盘等相关负载能力数据和图表。
 - 6、测试人员总结生成综合报告，向业务部门反馈该kubernetes平台的负载能力。
 
-## 基本概况
+## 🔖 基本概况
 - 开发语言：JAVA
 - Java_Version：1.8.0
 - 秘钥算法：SM4加密，对称加密
@@ -57,7 +57,7 @@
 - 访问控制：iptables限制客户端IP范围，nginx限制客户端IP范围
 - 高可用：数据库主从（主宕机不能新增key，但不影响查询）、接口双活+VIP
 
-## 概要功能伪代码
+## 📃 概要功能伪代码
 
 ``` java
 def makeKey():
@@ -82,7 +82,7 @@ def healthy():
     healthyStatus = Math.abs(mysqlTimeStamp - javaTimeStamp)
     return healthyStatus
 ```
-## 待改善
+## 📑 待改善
 
 - **1、** 当前只是实现设想中的功能，代码结构需要进一步设计，也可以嵌入到更完善的框架内。
 - **2、** 建议部署于集群内，因为接口无鉴权，当前看起来也不需要鉴权。
@@ -92,10 +92,10 @@ def healthy():
 - **6、** 异常捕捉、日志（可以不记录业务日志）。
 - **7、** 其他。
 
-## 其他
+## 📰 其他
 - **1、** 工程内的数据库密码等，是随手写的，可以依需要进行修改。
 
-## 自测
+## 📋 自测
 ``` java
 自测地址:
 http://127.0.0.1:8080/OAMLab/doc.html
@@ -133,23 +133,23 @@ API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 }
 ``` 
 
-## 技术交流群
+## 📶 技术交流群
 深圳运维圈 QQ交流群：216589280 [点击加入](https://jq.qq.com/?_wv=1027&k=tdDtDoUp)
 
 *[国内访问请使用国内资料站gitee入口，点击进入](https://gitee.com/oamlab/STS)
 
-## 编译
+## 🔨 编译
 <br>
 <p align="center">
 	<img alt="OAMLab_sts_build_example" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/101_build_example.png">
 </p>
 
-## 启动
+## 📡 启动
 <p align="center">
 	<img alt="OAMLab_sts_start_example" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/102_start_example.png">
 </p>
 
-## 调试与试用
+## 🔧 调试与试用
 <p align="center">
 	<img alt="OAMLab_sts_MakeKey" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/201_makekey.png">
 </p>
@@ -162,7 +162,7 @@ API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 	<img alt="OAMLab_sts_dataDecrypt" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/203_dataDecrypt.png">
 </p>
 
-## 压力测试
+## 🔩 压力测试
 - 云平台：Kubernetes
 - 容器数(STS)：2
 - 并发：200
