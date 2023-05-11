@@ -1,19 +1,30 @@
 
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">STS v0.1.0</h1>
 <h4 align="center">Secret Transfer Service</h4>
+<p align="center">
+  <a href="./LICENSE"><img alt="license" src="https://img.shields.io/github/license/oamlab/STS" /></a>
+  <img alt="repo-size" src="https://img.shields.io/github/repo-size/oamlab/STS" />
+</p>
+
+<p align="center">
+   <a href="https://github.com/oamlab/STS">github</a> | 
+   <a href="https://gitee.com/oamlab/STS">gitee</a> | 
+   <a href="https://github.com/oamlab/STS/blob/main/README.English.md">English</a>
+</p>
+
 <p align="center"></p>
 
 ---
 
-## Preface：
+## 🌏 Preface：
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
-- [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README_English.md)
+- [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README.English.md)
 
-## Background:
+## 🔒 Background:
 - Solve the encryption requirements of confidential passwords of business environment configuration items. For example, the management configuration items of a certain system platform have the problem of clear keys, which may result in the leakage of artificial keys in the daily management process.
 - After the infrastructure platform of a project is deployed, a stress test needs to be performed from the interface to the DB.
 
-## Purpose
+## 🔑 Purpose
 - **Scenario A:** It can be used to encrypt confidential configuration items in business environment, as follows:
 - 1.The database administrator of a project's production environment creates a new database account A, password P
 - 2.The database administrator in the production environment uses the STS interface to obtain the keyid, combined with the password P, and obtains the ciphertext XXX of the password P on the STS interface
@@ -25,8 +36,8 @@
 - 2.You can also encrypt your account.
 - 3.Theoretically, the leakage of the ciphertext XXX and keyid will not cause leakage, because the ciphertext cannot be decrypted without the STS.
 - 4.The test environment can independently deploy a set of STS, which is different from the production environment.
-- 
-- 
+-
+-
 - **Scenario B:** It can be used for interface testing and stress testing before the delivery of the infrastructure environment, as follows:
 - 1.A project has newly deployed a kubernetes platform.
 - 2.The tester deploys STS into kubernetes and starts 100 Pods, which connect to the same database.
@@ -35,7 +46,7 @@
 - 5.During this process, the testers also observed the relevant load capacity data and charts of the host and platform such as CPU, memory, network, disk, etc.
 - 6.The tester summarizes and generates a comprehensive report, and feeds back the load capacity of the kubernetes platform to the business department.
 
-## Basic profile
+## 🔖 Basic profile
 - Development language: JAVA
 - Java_Version：1.8.0
 - Key algorithm: SM4 encryption, symmetric encryption
@@ -44,7 +55,7 @@
 - Access control: iptables restricts client IP range, nginx restricts client IP range
 - High availability: database master-slave (master downtime cannot add keys, but does not affect query), interface HA+VIP
 
-## Summary function pseudo code
+## 📃 Summary function pseudo code
 
 ``` java
 def makeKey():
@@ -69,20 +80,20 @@ def healthy():
     healthyStatus = Math.abs(mysqlTimeStamp - javaTimeStamp)
     return healthyStatus
 ```
-## To be improved
+## 📑 To be improved
 
 - **1.** At present, it is only to implement the envisaged functions, and the code structure needs to be further designed, and it can also be embedded in a more complete framework.
 - **2.** It is recommended to deploy in the cluster, because the interface is not authenticated, and it does not seem to require authentication at present.
-- **3.** URL filtering, etc. to be added.
+- **3.** URL filtering, character filtering, etc. to be added.
 - **4.** The plaintext should be base64 encoded.
 - **5.** To be further safety design.
 - **6.** Exception capture, log (business log may not be recorded).
 - **7.** others.
 
-## other
+## 📰 other
 - **1.** The database password, etc. in the project are handwritten and can be modified as needed.
 
-## Test
+## 📋 Test
 ``` java
 Test address:
 http://127.0.0.1:8080/OAMLab/doc.html
@@ -120,34 +131,34 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 }
 ``` 
 
-## Technical exchange club
+## 📶 Technical exchange club
 (CN)SHENZHEN Operation And Maintenance CLUB, QQ group：216589280 [Click to join](https://jq.qq.com/?_wv=1027&k=tdDtDoUp)
 
-## Compile
+## 🔨 Compile
 <br>
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/101_build_example.png">
+	<img alt="OAMLab_sts_build_example" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/101_build_example.png">
 </p>
 
-## Start STS
+## 📡 Start STS
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/102_start_example.png">
+	<img alt="OAMLab_sts_start_example" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/102_start_example.png">
 </p>
 
-## Use
+## 🔧 Debug and Trial
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/201_makekey.png">
-</p>
-
-<p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/202_dataEncrypt.png">
+	<img alt="OAMLab_sts_MakeKey" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/201_makekey.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/203_dataDecrypt.png">
+	<img alt="OAMLab_sts_dataEncrypt" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/202_dataEncrypt.png">
 </p>
 
-## Performance_Testing
+<p align="center">
+	<img alt="OAMLab_sts_dataDecrypt" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/203_dataDecrypt.png">
+</p>
+
+## 🔩 Performance_Testing
 - Cloud platform:Kubernetes
 - Number of containers(STS)：2
 - Concurrency:200
@@ -155,17 +166,17 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 - [JMeter-Testing-profile](https://github.com/oamlab/STS/blob/main/Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/151_Kubernetes_STS.png">
+	<img alt="OAMLab_sts_Kubernetes_STS" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/151_Kubernetes_STS.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Thread_Group" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/202_Report.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Report" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/202_Report.png">
 </p>
 
 <p align="center">
-	<img alt="logo" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Mysql_Data" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
 </p>
