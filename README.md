@@ -16,13 +16,23 @@
 
 ---
 
-## 🌏 前言：
+## 🌏 前言
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
 - [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README.English.md)
 
 *[国内访问请使用国内资料仓gitee入口，点击进入](https://gitee.com/oamlab/STS)
 
-## 🔒 背景：
+## 🔃 提交代码
+- 提交代码路径：个人分支 >> develop >> main
+- 譬如：develop_AndyYao_202301 >> develop >> main
+- 为了方便做代码评审，每次最多提交5个代码文件，每次最多提交200行代码。
+
+## 🆓 版权说明
+- 原软件或依赖软件仍保持其原有授权。
+- 独立于原软件或依赖软件之外编写的代码、辅助软件、使用方法、文档等，是GNU General Public License v3.0授权。
+- 譬如：XXX Community Server 1.0.1是基于GPL v2.0授权，我们编写的辅助软件start_XXX.sh和文档是基于GPL v3.0。
+
+## 🔒 背景
 - 解决业务环境配置项的涉密密码的加密需求。譬如：某系统平台的管理的配置项有秘钥明码的问题，在日常管理过程中，可能造成人为的秘钥外泄。
 - 某项目的基础设施平台部署后，需要进行从接口到DB的压力测试。
 
