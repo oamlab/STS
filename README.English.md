@@ -185,6 +185,7 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 - Push code path: personal-branch >> develop >> main
 - For example: develop_AndyYao_202301 >> develop >> main
 - In order to facilitate code review, a maximum of 5 code files can be submitted each time, and a maximum of 200 lines of code can be submitted each time.
+- [Connect to GitHub using SSH](https://github.com/oamlab/oamlab/blob/main/OAMLab/171_%E8%BF%90%E7%BB%B4%E5%B7%A5%E5%85%B7/301_%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/211_GitHub_SSH_Key.md)
 
 ## About the License
 - Original software or dependent software retains its original license.
