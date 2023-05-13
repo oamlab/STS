@@ -20,16 +20,6 @@
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
 - [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README.English.md)
 
-## 🔃 Push Code
-- Push code path: personal-branch >> develop >> main
-- For example: develop_AndyYao_202301 >> develop >> main
-- In order to facilitate code review, a maximum of 5 code files can be submitted each time, and a maximum of 200 lines of code can be submitted each time.
-
-## About the License
-- Original software or dependent software retains its original license.
-- Codes, auxiliary software, usage methods, documents, etc. written independently of the original software or dependent software are authorized by the GNU General Public License v3.0.
-- For example: XXX Community Server 1.0.1 is authorized based on GPL v2.0, and the auxiliary software start_XXX.sh and documents we wrote are based on GPL v3.0.
-
 ## 🔒 Background
 - Solve the encryption requirements of confidential passwords of business environment configuration items. For example, the management configuration items of a certain system platform have the problem of clear keys, which may result in the leakage of artificial keys in the daily management process.
 - After the infrastructure platform of a project is deployed, a stress test needs to be performed from the interface to the DB.
@@ -190,3 +180,13 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 <p align="center">
 	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Mysql_Data" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
 </p>
+
+## 🔃 Push Code
+- Push code path: personal-branch >> develop >> main
+- For example: develop_AndyYao_202301 >> develop >> main
+- In order to facilitate code review, a maximum of 5 code files can be submitted each time, and a maximum of 200 lines of code can be submitted each time.
+
+## About the License
+- Original software or dependent software retains its original license.
+- Codes, auxiliary software, usage methods, documents, etc. written independently of the original software or dependent software are authorized by the GNU General Public License v3.0 .
+- For example: XXX Community Server 1.0.1 is authorized based on GPL v2.0, and the auxiliary software start_XXX.sh and documents we wrote are based on GPL v3.0 .
