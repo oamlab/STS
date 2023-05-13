@@ -9,7 +9,7 @@
 <p align="center">
    <a href="https://github.com/oamlab/STS">github</a> | 
    <a href="https://gitee.com/oamlab/STS">gitee</a> | 
-   <a href="https://github.com/oamlab/STS/blob/main/README.English.md">English</a>
+   <a href="./README.English.md">English</a>
 </p>
 
 <p align="center"></p>
@@ -18,7 +18,7 @@
 
 ## 🌏 Preface
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
-- [Online Documentation：https://github.com/oamlab/STS/](https://github.com/oamlab/STS/blob/main/README.English.md)
+- [Online Documentation：https://github.com/oamlab/STS/](./README.English.md)
 
 ## 🔒 Background
 - Solve the encryption requirements of confidential passwords of business environment configuration items. For example, the management configuration items of a certain system platform have the problem of clear keys, which may result in the leakage of artificial keys in the daily management process.
@@ -137,25 +137,25 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 ## 🔨 Compile
 <br>
 <p align="center">
-	<img alt="OAMLab_sts_build_example" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/101_build_example.png">
+	<img alt="OAMLab_sts_build_example" src="./Compile_to_Trial/101_build_example.png">
 </p>
 
 ## 📡 Start STS
 <p align="center">
-	<img alt="OAMLab_sts_start_example" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/102_start_example.png">
+	<img alt="OAMLab_sts_start_example" src="./Compile_to_Trial/102_start_example.png">
 </p>
 
 ## 🔧 Debug and Trial
 <p align="center">
-	<img alt="OAMLab_sts_MakeKey" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/201_makekey.png">
+	<img alt="OAMLab_sts_MakeKey" src="./Compile_to_Trial/201_makekey.png">
 </p>
 
 <p align="center">
-	<img alt="OAMLab_sts_dataEncrypt" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/202_dataEncrypt.png">
+	<img alt="OAMLab_sts_dataEncrypt" src="./Compile_to_Trial/202_dataEncrypt.png">
 </p>
 
 <p align="center">
-	<img alt="OAMLab_sts_dataDecrypt" src="https://github.com/oamlab/STS/blob/main/Compile_to_Trial/203_dataDecrypt.png">
+	<img alt="OAMLab_sts_dataDecrypt" src="./Compile_to_Trial/203_dataDecrypt.png">
 </p>
 
 ## 🔩 Performance_Testing
@@ -163,22 +163,22 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 - Number of containers(STS)：2
 - Concurrency:200
 - Total requests：20000
-- [JMeter-Testing-profile](https://github.com/oamlab/STS/blob/main/Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
+- [JMeter-Testing-profile](./Performance_Testing/301_Apache_JMeter_TestPlanA.20221114.1115.jmx)
 
 <p align="center">
-	<img alt="OAMLab_sts_Kubernetes_STS" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/151_Kubernetes_STS.png">
+	<img alt="OAMLab_sts_Kubernetes_STS" src="./Performance_Testing/151_Kubernetes_STS.png">
 </p>
 
 <p align="center">
-	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Thread_Group" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/201_Thread_Group.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Thread_Group" src="./Performance_Testing/201_Thread_Group.png">
 </p>
 
 <p align="center">
-	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Report" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/202_Report.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Report" src="./Performance_Testing/202_Report.png">
 </p>
 
 <p align="center">
-	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Mysql_Data" src="https://github.com/oamlab/STS/blob/main/Performance_Testing/203_data.png">
+	<img alt="OAMLab_sts_Kubernetes_STS_Jmeter_Mysql_Data" src="./Performance_Testing/203_data.png">
 </p>
 
 ## 🔃 Push Code
