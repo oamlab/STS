@@ -189,6 +189,7 @@ API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 - 提交代码路径：个人分支 >> develop >> main
 - 譬如：develop_AndyYao_202301 >> develop >> main
 - 为了方便做代码评审，每次最多提交5个代码文件，每次最多提交200行代码。
+- [使用SSH的方式连接GitHub](https://github.com/oamlab/oamlab/blob/main/OAMLab/171_%E8%BF%90%E7%BB%B4%E5%B7%A5%E5%85%B7/301_%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/211_GitHub_SSH_Key.md)
 
 ## 🆓 版权说明
 - 原软件或依赖软件仍保持其原有授权。
