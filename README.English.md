@@ -191,3 +191,7 @@ API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 - Original software or dependent software retains its original license.
 - Codes, auxiliary software, usage methods, documents, etc. written independently of the original software or dependent software are authorized by the GNU General Public License v3.0 .
 - For example: XXX Community Server 1.0.1 is authorized based on GPL v2.0, and the auxiliary software start_XXX.sh and documents we wrote are based on GPL v3.0 .
+
+<p align="center">
+	<img alt="OAMLab_sts_english_img" src="https://www.wegoodgoodstudydaydayup.com/sts_english.webp?v=1">
+</p>
