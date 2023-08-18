@@ -81,7 +81,15 @@ def decrypt(keyId,密文):
 def healthy():
     healthyStatus = Math.abs(mysqlTimeStamp - javaTimeStamp)
     return healthyStatus
+
+def version():
+    versionTag = 20230818-223301
+    return versionTag
 ```
+
+🚥 服务端口
+- 8080
+
 ## 📑 待改善
 
 - **1、** 当前只是实现设想中的功能，代码结构需要进一步设计，也可以嵌入到更完善的框架内。
@@ -101,6 +109,7 @@ def healthy():
 http://127.0.0.1:8080/OAMLab/doc.html
 
 制造秘钥: http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
+方法: POST
 {
 	"cipherText": "",
 	"id": 0,
@@ -110,6 +119,7 @@ http://127.0.0.1:8080/OAMLab/doc.html
 }
 
 加密: http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
+方法: POST
 {
 	"cipherText": "",
 	"id": 0,
@@ -119,6 +129,7 @@ http://127.0.0.1:8080/OAMLab/doc.html
 }
 
 解密: http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
+方法: POST
 {
 	"cipherText": "4808bd3336f933121118ba0798dc0a61",
 	"id": 0,
@@ -128,8 +139,15 @@ http://127.0.0.1:8080/OAMLab/doc.html
 }
 
 API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
+方法: GET
 {
 	"healthy": "1",
+}
+
+版本标识: http://127.0.0.1:8080/OAMLab/api/v1/version
+方法: GET
+{
+	"version": "20230818-223301",
 }
 ``` 
 
