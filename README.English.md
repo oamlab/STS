@@ -79,7 +79,15 @@ def decrypt(keyId,ciphertext):
 def healthy():
     healthyStatus = Math.abs(mysqlTimeStamp - javaTimeStamp)
     return healthyStatus
+
+def version():
+    versionTag = 20230818-223301
+    return versionTag
 ```
+
+🚥 Service Port
+- 8080
+
 ## 📑 To be improved
 
 - **1.** At present, it is only to implement the envisaged functions, and the code structure needs to be further designed, and it can also be embedded in a more complete framework.
@@ -99,6 +107,7 @@ Test address:
 http://127.0.0.1:8080/OAMLab/doc.html
 
 MakeKey: http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
+Method: POST
 {
 	"cipherText": "",
 	"id": 0,
@@ -108,6 +117,7 @@ MakeKey: http://127.0.0.1:8080/OAMLab/api/v1/key/makeKey
 }
 
 Encrypt: http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
+Method: POST
 {
 	"cipherText": "",
 	"id": 0,
@@ -117,6 +127,7 @@ Encrypt: http://127.0.0.1:8080/OAMLab/api/v1/key/dataEncrypt
 }
 
 Decrypt: http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
+Method: POST
 {
 	"cipherText": "4808bd3336f933121118ba0798dc0a61",
 	"id": 0,
@@ -126,8 +137,15 @@ Decrypt: http://127.0.0.1:8080/OAMLab/api/v1/key/dataDecrypt
 }
 
 API health checkup: http://127.0.0.1:8080/OAMLab/api/v1/healthy
+Method: GET
 {
 	"healthy": "1",
+}
+
+Version Tag: http://127.0.0.1:8080/OAMLab/api/v1/version
+Method: GET
+{
+	"version": "20230818-223301",
 }
 ``` 
 
