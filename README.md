@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-   <a href="https://github.com/oamlab/STS">github</a> | 
-   <a href="https://gitee.com/oamlab/STS">gitee</a> | 
+   <a href="https://github.com/oamlab/STS">GitHub</a> | 
+   <a href="https://gitee.com/oamlab/STS">Gitee</a> | 
    <a href="./README.English.md">English</a>
 </p>
 
@@ -20,7 +20,7 @@
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
 - [Online Documentation：https://github.com/oamlab/STS/](./README.English.md)
 
-*[国内访问请使用国内资料仓gitee入口，点击进入](https://gitee.com/oamlab/STS)
+*[国内访问请使用国内资料仓Gitee入口，点击进入](https://gitee.com/oamlab/STS)
 
 ## 🔒 背景
 - 解决业务环境配置项的涉密密码的加密需求。譬如：某系统平台的管理的配置项有秘钥明码的问题，在日常管理过程中，可能造成人为的秘钥外泄。
@@ -154,7 +154,7 @@ API健康检查: http://127.0.0.1:8080/OAMLab/api/v1/healthy
 ## 📶 技术交流群
 深圳运维圈 QQ交流群：216589280 [点击加入](https://jq.qq.com/?_wv=1027&k=tdDtDoUp)
 
-*[国内访问请使用国内资料仓gitee入口，点击进入](https://gitee.com/oamlab/STS)
+*[国内访问请使用国内资料仓Gitee入口，点击进入](https://gitee.com/oamlab/STS)
 
 ## 🔨 编译
 <br>
