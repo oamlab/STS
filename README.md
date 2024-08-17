@@ -18,7 +18,7 @@
 
 ## 🌏 前言
 - [在线文档：https://github.com/oamlab/STS](https://github.com/oamlab/STS)
-- [Online Documentation：https://github.com/oamlab/STS/](./README.English.md)
+- [Online Documentation：https://github.com/oamlab/STS](./README.English.md)
 
 *[国内访问请使用国内资料仓Gitee入口，点击进入](https://gitee.com/oamlab/STS)
 
