@@ -100,6 +100,7 @@ def version():
 
 ## 📰 other
 - **1.** The database password, etc. in the project are handwritten and can be modified as needed.
+- **2.** Due to statistical performance testing results and request success rates, 'retry' is not used in the code.
 
 ## 📋 Test
 ``` java
